@@ -1,0 +1,2134 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Pakar TMS - Temporary Modular Shelter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <div class="logo-icon">
+            <img
+              src="uii.png"
+              alt="Logo UII"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <div class="logo-text">
+            <h1>
+              Sistem Pengambilan Keputusan untuk Perencanaan Temporary Modular
+              Shelter (TMS)
+            </h1>
+            <p class="subtitle">Validasi Sistem Pengambilan Keputusan</p>
+            <p class="university">
+              Universitas Islam Indonesia - Fakultas Teknik Sipil dan
+              Perencanaan
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <nav>
+        <div class="nav-buttons">
+          <button class="nav-btn active" onclick="showSection('overview')">
+            Overview
+          </button>
+          <button class="nav-btn" onclick="showSection('location')">
+            Lokasi
+          </button>
+          <button class="nav-btn" onclick="showSection('sdm')">SDM</button>
+          <button class="nav-btn" onclick="showSection('material')">
+            Material
+          </button>
+          <button class="nav-btn" onclick="showSection('tms-types')">
+            Jenis TMS
+          </button>
+          <button class="nav-btn" onclick="showSection('assessment')">
+            Penilaian
+          </button>
+        </div>
+      </nav>
+
+      <!-- Overview Section -->
+      <div id="overview" class="content-section active">
+        <h2>🏠 Overview Sistem Pakar TMS</h2>
+
+        <div class="card">
+          <h3>Tujuan Sistem Pakar</h3>
+          <ul style="list-style-type: none; padding-left: 0">
+            <li
+              style="
+                margin: 8px 0;
+                padding: 8px;
+                background: #e8f4f8;
+                border-radius: 6px;
+                font-size: 0.9rem;
+              "
+            >
+              1. Memberikan rekomendasi desain shelter secara cepat dalam
+              situasi darurat pasca bencana.
+            </li>
+            <li
+              style="
+                margin: 8px 0;
+                padding: 8px;
+                background: #e8f4f8;
+                border-radius: 6px;
+                font-size: 0.9rem;
+              "
+            >
+              2. Menyediakan solusi berbasis data lapangan yang akurat dan
+              relevan terhadap kondisi aktual.
+            </li>
+            <li
+              style="
+                margin: 8px 0;
+                padding: 8px;
+                background: #e8f4f8;
+                border-radius: 6px;
+                font-size: 0.9rem;
+              "
+            >
+              3. Mengelompokkan kompleksitas data menjadi kategori kesiapan
+              (Tinggi, Sedang, Rendah) agar lebih mudah dipahami dan diterapkan.
+            </li>
+            <li
+              style="
+                margin: 8px 0;
+                padding: 8px;
+                background: #e8f4f8;
+                border-radius: 6px;
+                font-size: 0.9rem;
+              "
+            >
+              4. Menghasilkan desain shelter yang sesuai dengan kombinasi
+              kondisi sumber daya manusia, lokasi, dan material lokal.
+            </li>
+            <li
+              style="
+                margin: 8px 0;
+                padding: 8px;
+                background: #e8f4f8;
+                border-radius: 6px;
+                font-size: 0.9rem;
+              "
+            >
+              5. Mendukung Perencanaan Tanggap Darurat yang Adaptif dengan
+              menjamin bahwa hasil desain dapat dengan mudah diimplementasikan
+              di berbagai lokasi bencana.
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Indikator Tingkat Kesiapan</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 10px">
+            Menganalisis dan mengintegrasikan indikator dalam pengambilan
+            keputusan perencanaan Temporary Modular Shelter (TMS) guna
+            meningkatkan efisiensi dan efektivitas implementasi:
+          </p>
+          <ol style="margin: 10px 0; padding-left: 20px; font-size: 0.9rem">
+            <li><strong>Sumber Daya Manusia (SDM)</strong></li>
+            <li><strong>Ketersediaan Material Lokal</strong></li>
+            <li><strong>Karakteristik Lokasi Bencana</strong></li>
+          </ol>
+        </div>
+
+        <div class="card">
+          <h3>Cara Kerja Sistem Pengambilan Keputusan</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 10px">
+            Sistem pengambilan keputusan ini dirancang untuk membantu menentukan
+            desain Temporary Modular Shelter (TMS) yang paling sesuai dengan
+            kondisi di lapangan. Cara kerja sistem ini memiliki beberapa
+            keunggulan utama:
+          </p>
+          <ol style="margin: 10px 0; padding-left: 20px; font-size: 0.9rem">
+            <li>Mudah diterapkan di berbagai situasi darurat.</li>
+            <li>
+              Mampu menyesuaikan dengan berbagai jenis data yang dikumpulkan
+              dari lapangan.
+            </li>
+            <li>
+              Memberikan hasil yang jelas dan transparan, sehingga mudah
+              dipahami.
+            </li>
+            <li>
+              Menampilkan proses pengambilan keputusan dalam bentuk visual, agar
+              lebih mudah dijelaskan dan digunakan.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Location Accessibility Section -->
+      <div id="location" class="content-section">
+        <h2>📍 Indikator Keterjangkauan Lokasi</h2>
+
+        <div class="validation-result">
+          <h3>✅ Hasil Validasi</h3>
+          <p>
+            <strong>Validitas:</strong> Semua indikator menunjukkan korelasi
+            Pearson > 0,3 dengan p-value < 0,001
+          </p>
+          <p>
+            <strong>Reliabilitas:</strong> Cronbach's Alpha = 0,983 (sangat
+            tinggi)
+          </p>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="criteria-table">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Kriteria</th>
+                <th class="score-1">Skor 1</th>
+                <th class="score-2">Skor 2</th>
+                <th class="score-3">Skor 3</th>
+                <th class="score-4">Skor 4</th>
+                <th class="score-5">Skor 5</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><strong>Jenis Jalan</strong></td>
+                <td class="score-1">Tidak tersedia akses darat</td>
+                <td class="score-2">Tersedia akses darat alami</td>
+                <td class="score-3">
+                  Terdapat akses darat, namun mengalami kerusakan parah (≥ 50%)
+                </td>
+                <td class="score-4">
+                  Terdapat akses darat dengan kerusakan sedang (20 50%)
+                </td>
+                <td class="score-5">
+                  Akses darat dalam kondisi baik (kerusakan 0 19%)
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><strong>Jarak dari Pusat Logistik Utama</strong></td>
+                <td class="score-1">Lebih dari 30 km</td>
+                <td class="score-2">20-30 km</td>
+                <td class="score-3">10-20 km</td>
+                <td class="score-4">5-10 km</td>
+                <td class="score-5">kurang dari 5 km</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <strong>Jenis Kendaraan yang Dapat Mengakses Lokasi</strong>
+                </td>
+                <td class="score-1">Tidak dapat dilalui kendaraan</td>
+                <td class="score-2">Hanya dilalui sepeda motor</td>
+                <td class="score-3">Dapat dilalui kendaraan tertentu</td>
+                <td class="score-4">
+                  Dapat dilalui kendaraan kecil dan sedang
+                </td>
+                <td class="score-5">
+                  Dapat dilalui kendaraan besar seperti truk atau tronton
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><strong>Ketersediaan Transportasi Umum</strong></td>
+                <td class="score-1">Tidak tersedia</td>
+                <td class="score-2">
+                  Tersedia maksimal satu kali dalam sehari
+                </td>
+                <td class="score-3">Tersedia 2-8 kali dalam sehari</td>
+                <td class="score-4">Tersedia 9-12 kali dalam sehari</td>
+                <td class="score-5">
+                  Tersedia setiap saat (akses daring/online)
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><strong>Waktu Tempuh dari Pusat Logistik Utama</strong></td>
+                <td class="score-1">Lebih dari 3 jam</td>
+                <td class="score-2">2-3 jam</td>
+                <td class="score-3">1-2 jam</td>
+                <td class="score-4">30-60 menit</td>
+                <td class="score-5">kurang dari 30 menit</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td><strong>Kondisi Lingkungan Proyek</strong></td>
+                <td class="score-1">
+                  Kondisi buruk dengan kemiringan lahan > 15%
+                </td>
+                <td class="score-2">
+                  Kondisi kurang baik dengan kemiringan lahan 12-15%
+                </td>
+                <td class="score-3">
+                  Kondisi sedang dengan kemiringan lahan 9-11%
+                </td>
+                <td class="score-4">
+                  Kondisi baik dengan kemiringan lahan 6-8%
+                </td>
+                <td class="score-5">
+                  Kondisi ideal dengan kemiringan lahan 2,5-5%
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h3>Penilaian Total Keterjangkauan Lokasi</h3>
+          <div class="responsive-grid">
+            <div
+              style="
+                background: #b3e6cc;
+                padding: 12px;
+                border-radius: 8px;
+                border-left: 4px solid #28a745;
+              "
+            >
+              <strong>Tinggi (25-30)</strong><br />
+              <small
+                >Lokasi sangat mudah dijangkau, cocok untuk pembangunan TMS
+                tanpa logistik tambahan</small
+              >
+            </div>
+            <div
+              style="
+                background: #fff3cd;
+                padding: 12px;
+                border-radius: 8px;
+                border-left: 4px solid #ffc107;
+              "
+            >
+              <strong>Sedang (18-24)</strong><br />
+              <small
+                >Akses cukup baik, namun perlu sedikit dukungan tambahan (alat
+                kecil, distribusi lokal)</small
+              >
+            </div>
+            <div
+              style="
+                background: #f8d7da;
+                padding: 12px;
+                border-radius: 8px;
+                border-left: 4px solid #dc3545;
+              "
+            >
+              <strong>Rendah (≤17)</strong><br />
+              <small
+                >Lokasi sulit dijangkau, memerlukan perencanaan khusus logistik
+                dan SDM tambahan</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SDM Section -->
+      <div id="sdm" class="content-section">
+        <h2>👷 Indikator Ketersediaan SDM</h2>
+
+        <div class="validation-result">
+          <h3>✅ Hasil Validasi</h3>
+          <p>
+            <strong>Validitas:</strong> Semua indikator menunjukkan korelasi
+            Pearson > 0,9 dengan p-value < 0,001
+          </p>
+          <p>
+            <strong>Reliabilitas:</strong> Cronbach's Alpha = 0,980 (sangat
+            tinggi)
+          </p>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="criteria-table">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Kriteria</th>
+                <th class="score-1">Skor 1</th>
+                <th class="score-2">Skor 2</th>
+                <th class="score-3">Skor 3</th>
+                <th class="score-4">Skor 4</th>
+                <th class="score-5">Skor 5</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><strong>Sertifikasi di Bidang Konstruksi</strong></td>
+                <td class="score-1">Tidak memiliki sertifikasi apapun</td>
+                <td class="score-2">Memiliki sertifikasi yang tidak relevan</td>
+                <td class="score-3">
+                  Memiliki sertifikasi relevan tetapi tidak terdaftar di BNSP
+                </td>
+                <td class="score-4">
+                  Memiliki satu sertifikasi relevan yang terdaftar di BNSP
+                </td>
+                <td class="score-5">
+                  Memiliki lebih dari satu sertifikasi relevan yang terdaftar di
+                  BNSP
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><strong>Kemampuan dalam Membaca Gambar Teknik </strong></td>
+                <td class="score-1">Tidak mampu membaca gambar</td>
+                <td class="score-2">
+                  Mampu membaca gambar sederhana/non-teknis
+                </td>
+                <td class="score-3">Mampu membaca dan meniru gambar teknis</td>
+                <td class="score-4">
+                  Mampu membaca dan mengedit gambar teknis
+                </td>
+                <td class="score-5">
+                  Mampu membaca dan membuat gambar teknis kompleks (misalnya
+                  AutoCAD)
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><strong>Penggunaan Alat Teknis</strong></td>
+                <td class="score-1">Tidak pernah menggunakan alat</td>
+                <td class="score-2">
+                  Jarang menggunakan alat (pernah digunakan dalam jangka waktu
+                  10 tahun terakhir)
+                </td>
+                <td class="score-3">
+                  Kadang kadang menggunakan alat (dalam 5 tahun terakhir)
+                </td>
+                <td class="score-4">
+                  Sering menggunakan alat (dalam 3 tahun terakhir)
+                </td>
+                <td class="score-5">
+                  Selalu menggunakan alat (dalam 1 tahun terakhir)
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><strong>Pengalaman Kerja di Bidang Konstruksi </strong></td>
+                <td class="score-1">
+                  Tidak memiliki pengalaman atau pengalaman kurang dari 1 tahun
+                </td>
+                <td class="score-2">Memiliki pengalaman selama 1-2 tahun</td>
+                <td class="score-3">Memiliki pengalaman selama 3-4 tahun</td>
+                <td class="score-4">Memiliki pengalaman selama 5-6 tahun</td>
+                <td class="score-5">
+                  Memiliki pengalaman lebih dari 6 tahun di bidang konstruksi
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><strong>Keterlibatan dalam Proyek Sejenis </strong></td>
+                <td class="score-1">Tidak pernah terlibat dalam proyek</td>
+                <td class="score-2">Pernah terlibat sebagai pekerja</td>
+                <td class="score-3">Pernah terlibat sebagai tukang</td>
+                <td class="score-4">Pernah terlibat sebagai kepala tukang</td>
+                <td class="score-5">Pernah terlibat sebagai mandor</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>
+                  <strong
+                    >Pelatihan Konstruksi (dalam Pengalaman/Keterlibatan)
+                  </strong>
+                </td>
+                <td class="score-1">Tidak pernah ikut pelatihan</td>
+                <td class="score-2">Ikut pelatihan >5 tahun lalu</td>
+                <td class="score-3">Ikut pelatihan >3 tahun lalu</td>
+                <td class="score-4">Pelatihan dalam 1 tahun terakhir</td>
+                <td class="score-5">Aktif dalam pelatihan dan jadi trainer</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h3>Penilaian Total Ketersediaan SDM (Sumber Daya Manusia)</h3>
+          <div class="responsive-grid">
+            <div
+              style="
+                background: #b3e6cc;
+                padding: 12px;
+                border-radius: 8px;
+                border-left: 4px solid #28a745;
+              "
+            >
+              <strong>Tinggi (25-30)</strong><br />
+              <small
+                >SDM sangat siap, terampil, dan mampu membangun TMS secara
+                mandiri dengan kualitas baik</small
+              >
+            </div>
+            <div
+              style="
+                background: #fff3cd;
+                padding: 12px;
+                border-radius: 8px;
+                border-left: 4px solid #ffc107;
+              "
+            >
+              <strong>Sedang (18-24)</strong><br />
+              <small
+                >SDM cukup kompeten, memerlukan arahan teknis atau pelatihan
+                singkat untuk efisiensi kerja</small
+              >
+            </div>
+            <div
+              style="
+                background: #ffcccc;
+                padding: 12px;
+                border-radius: 8px;
+                border-left: 4px solid #dc3545;
+              "
+            >
+              <strong>Rendah (≤17)</strong><br />
+              <small
+                >SDM belum siap, memerlukan pelatihan intensif atau tenaga
+                bantuan dari luar</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Material Section -->
+      <div id="material" class="content-section">
+        <h2>🧱 Indikator Ketersediaan Material</h2>
+
+        <div class="validation-result">
+          <h3>✅ Hasil Validasi</h3>
+          <p>
+            <strong>Validitas:</strong> Semua indikator menunjukkan korelasi
+            Pearson > 0,9 dengan p-value < 0,001
+          </p>
+          <p>
+            <strong>Reliabilitas:</strong> Cronbach's Alpha = 0,980 (sangat
+            tinggi)
+          </p>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="criteria-table">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Kriteria</th>
+                <th class="score-1">Skor 1</th>
+                <th class="score-2">Skor 2</th>
+                <th class="score-3">Skor 3</th>
+                <th class="score-4">Skor 4</th>
+                <th class="score-5">Skor 5</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <strong>Volume Material Lokal Tersedia yang Tersedia</strong>
+                </td>
+                <td class="score-1">
+                  Kurang dari 50% dari total kebutuhan material
+                </td>
+                <td class="score-2">50-59% dari total kebutuhan</td>
+                <td class="score-3">60-79% dari total kebutuhan</td>
+                <td class="score-4">80-90% dari total kebutuhan</td>
+                <td class="score-5">91-100% dari total kebutuhan</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><strong>Keanekaragaman Jenis Material Lokal</strong></td>
+                <td class="score-1">
+                  Kurang dari 20% jenis material yang diperlukan tersedia
+                </td>
+                <td class="score-2">21-30% jenis material tersedia</td>
+                <td class="score-3">31-40% jenis material tersedia</td>
+                <td class="score-4">41-50% jenis material tersedia</td>
+                <td class="score-5">Lebih dari 51% jenis material tersedia</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><strong>Kemudahan dalam Mendapatkan Material</strong></td>
+                <td class="score-1">Tidak dapat memperoleh material</td>
+                <td class="score-2">
+                  Material tersedia tetapi sulit diakses (lambat, offline, dan
+                  stok tidak pasti)
+                </td>
+                <td class="score-3">
+                  Material tersedia dengan tingkat kemudahan sedang (offline dan
+                  lambat)
+                </td>
+                <td class="score-4">
+                  Material tersedia dan mudah diperoleh (dapat dipesan, namun
+                  masih secara offline)
+                </td>
+                <td class="score-5">
+                  Material tersedia dan sangat mudah diperoleh (dapat dipesan
+                  secara online)
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><strong>Harga dan Stabilitas Biaya Material</strong></td>
+                <td class="score-1">
+                  Harga mahal dengan fluktuasi lebih dari 10%
+                </td>
+                <td class="score-2">Harga mahal dengan fluktuasi 8-9%</td>
+                <td class="score-3">Harga mahal dengan fluktuasi 6-7%</td>
+                <td class="score-4">Harga wajar dengan fluktuasi 4-5%</td>
+                <td class="score-5">
+                  Harga wajar dengan fluktuasi kurang dari 3%
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><strong>Kemampuan Produksi Material Lokal</strong></td>
+                <td class="score-1">Tidak dapat diproduksi secara lokal</td>
+                <td class="score-2">Dapat diproduksi namun sangat lambat</td>
+                <td class="score-3">Dapat diproduksi tetapi lambat</td>
+                <td class="score-4">Dapat diproduksi secara normal</td>
+                <td class="score-5">
+                  Dapat diproduksi dan disesuaikan dengan kebutuhan secara
+                  efisien
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>
+                  <strong
+                    >Kesiapan Utilitas (Air, Listrik, Gas (LPG), Komunikasi)
+                  </strong>
+                </td>
+                <td class="score-1">Tidak tersedia</td>
+                <td class="score-2">Tersedia 1 kesiapan utilitas</td>
+                <td class="score-3">Tersedia 2 kesiapan utilitas</td>
+                <td class="score-4">Tersedia 3 kesiapan utilitas</td>
+                <td class="score-5">Semua tersedia kesiapan utilitas</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h3>Penilaian Total Ketersediaan Material Lokal</h3>
+          <div class="responsive-grid">
+            <div
+              style="
+                background: #b3e6cc;
+                padding: 12px;
+                border-radius: 8px;
+                border-left: 4px solid #28a745;
+              "
+            >
+              <strong>Tinggi (25-30)</strong><br />
+              <small
+                >Material sangat mudah diperoleh, lengkap, murah, dan tersedia
+                dalam jumlah cukup mendukung pembangunan cepat</small
+              >
+            </div>
+            <div
+              style="
+                background: #fff3cd;
+                padding: 12px;
+                border-radius: 8px;
+                border-left: 4px solid #ffc107;
+              "
+            >
+              <strong>Sedang (18-24)</strong><br />
+              <small
+                >Material tersedia namun terbatas dalam jenis atau jumlah
+                membutuhkan manajemen pasokan tambahan
+              </small>
+            </div>
+            <div
+              style="
+                background: #ffcccc;
+                padding: 12px;
+                border-radius: 8px;
+                border-left: 4px solid #dc3545;
+              "
+            >
+              <strong>Rendah (≤17)</strong><br />
+              <small
+                >Material langka/mahal, ragam terbatas, perlu didatangkan dari
+                luar pembangunan terhambat tanpa suplai eksternal</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TMS Types Section -->
+      <div id="tms-types" class="content-section">
+        <h2>🏘️ Jenis-Jenis TMS</h2>
+
+        <p
+          style="
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+          "
+        >
+          Sistem pakar menghasilkan 27 jenis desain TMS berdasarkan kombinasi
+          tiga faktor utama. Berikut adalah beberapa contoh desain TMS yang
+          representatif:
+        </p>
+
+        <div class="scrollable-content">
+          <div class="tms-grid">
+            <div class="tms-card">
+              <div class="tms-id">TMS-01</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                High-Tech Modular Unit
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-tinggi">SDM Tinggi</span>
+                <span class="category-badge category-tinggi"
+                  >Lokasi Tinggi</span
+                >
+                <span class="category-badge category-tinggi"
+                  >Material Tinggi</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 24 m² (6x4 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Rangka baja ringan, panel sandwich,
+                atap spandek
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Rakit cepat dengan bor listrik, 4-5
+                teknisi
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Tenaga ahli bangunan ringan dengan SOP
+                ketat
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong>
+                Truk logistik besar, sistem flat-pack
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-02</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Hybrid Local Industrial
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-tinggi">SDM Tinggi</span>
+                <span class="category-badge category-tinggi"
+                  >Lokasi Tinggi</span
+                >
+                <span class="category-badge category-sedang"
+                  >Material Sedang</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong>
+                Dikirim dalam komponen modular via truk kecil
+              </p>
+            </div>
+            <div class="tms-card">
+              <div class="tms-id">TMS-03</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Lightweight Import Local Mix
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-tinggi">SDM Tinggi</span>
+                <span class="category-badge category-tinggi"
+                  >Lokasi Tinggi</span
+                >
+                <span class="category-badge category-rendah"
+                  >Material Rendah</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 9 m² (3x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Rangka aluminium, terpal
+                UV-resistant, alas modular
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Buka-lipat, dirakit 2-3 orang tanpa
+                alat berat
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil atau relawan terlatih
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong>
+                Dibawa tim kecil, muat dalam mobil pickup
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-04</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Eco-Friendly Expert Build
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-tinggi">SDM Tinggi</span>
+                <span class="category-badge category-sedang"
+                  >Lokasi Sedang</span
+                >
+                <span class="category-badge category-tinggi"
+                  >Material Tinggi</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 12 m² (4x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Bambu, papan kayu lokal, atap
+                ijuk/spandek
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Dirakit manual oleh 4 orang dengan
+                alat tukang dasar
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Warga lokal dengan pelatihan singkat
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Material lokal, selebihnya
+                diangkut motor roda tiga
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-05</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Balanced Eco Modular
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-tinggi">SDM Tinggi</span>
+                <span class="category-badge category-sedang"
+                  >Lokasi Sedang</span
+                >
+                <span class="category-badge category-sedang"
+                  >Material Sedang</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 12 m² (4x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Bambu, papan kayu lokal, atap
+                ijuk/spandek
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Dirakit manual oleh 4 orang dengan
+                alat tukang dasar
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Warga lokal dengan pelatihan singkat
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Material lokal, selebihnya
+                diangkut motor roda tiga
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-06</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Compact Transportable Unit
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-tinggi">SDM Tinggi</span>
+                <span class="category-badge category-sedang"
+                  >Lokasi Sedang</span
+                >
+                <span class="category-badge category-rendah"
+                  >Material Rendah</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-07</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Rugged Terrain Shelter
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-tinggi">SDM Tinggi</span>
+                <span class="category-badge category-rendah"
+                  >Lokasi Rendah</span
+                >
+                <span class="category-badge category-tinggi"
+                  >Material tinggi</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-08</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Remote Smart Shelter
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-tinggi">SDM Tinggi</span>
+                <span class="category-badge category-rendah"
+                  >Lokasi Rendah</span
+                >
+                <span class="category-badge category-sedang"
+                  >Material Sedang</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-09</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Low-Material Tech Shelter
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-tinggi">SDM Tinggi</span>
+                <span class="category-badge category-rendah"
+                  >Lokasi Rendah</span
+                >
+                <span class="category-badge category-rendah"
+                  >Material Rendah</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-10</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Community Build Eco Hut
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-sedang">SDM Sedang</span>
+                <span class="category-badge category-tinggi"
+                  >Lokasi Tinggi</span
+                >
+                <span class="category-badge category-tinggi"
+                  >Material Tinggi</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 12 m² (4x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Bambu, papan kayu lokal, atap ijuk
+                atau spandek
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Dirakit manual oleh 4 orang dengan
+                alat tukang dasar
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Warga lokal dengan pelatihan singkat
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Material lokal, selebihnya
+                diangkut motor roda tiga
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-11</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Mixed Resource Shelter
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-sedang">SDM Sedang</span>
+                <span class="category-badge category-tinggi"
+                  >Lokasi Tinggi</span
+                >
+                <span class="category-badge category-sedang"
+                  >Material Sedang</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-12</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Adaptive Lightweight Unit
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-sedang">SDM Sedang</span>
+                <span class="category-badge category-tinggi"
+                  >Lokasi Tinggi</span
+                >
+                <span class="category-badge category-rendah"
+                  >Material Rendah</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 9 m² (3x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Rangka aluminium, terpal
+                UV-resistant, alas modular
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Buka-lipat, dirakit 2-3 orang tanpa
+                alat berat
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> SDM semi-terampil atau relawan terlatih
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dibawa tim kecil, muat dalam
+                mobil pickup
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-13</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Terrain-Adapted Hut
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-sedang">SDM Sedang</span>
+                <span class="category-badge category-sedang"
+                  >Lokasi Sedang</span
+                >
+                <span class="category-badge category-tinggi"
+                  >Material Tinggi</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-14</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Balanced Rural Shelter
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-sedang">SDM Sedang</span>
+                <span class="category-badge category-sedang"
+                  >Lokasi Sedang</span
+                >
+                <span class="category-badge category-sedang"
+                  >Material Sedang</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-15</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Simple Survival Shelter
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-sedang">SDM Sedang</span>
+                <span class="category-badge category-sedang"
+                  >Lokasi Sedang</span
+                >
+                <span class="category-badge category-rendah"
+                  >Material Rendah</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-16</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Steep Slope Bamboo Shelter
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-sedang">SDM Sedang</span>
+                <span class="category-badge category-rendah"
+                  >Lokasi Rendah</span
+                >
+                <span class="category-badge category-tinggi"
+                  >Material Tinggi</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 12 m² (4x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Bambu, papan kayu lokal, atap ijuk
+                atau spandek
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Dirakit manual oleh 4 orang dengan
+                alat tukang dasar
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Warga lokal dengan pelatihan singkat
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Material lokal, selebihnya
+                diangkut motor roda tiga
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-17</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Remote Area Shelter
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-sedang">SDM Sedang</span>
+                <span class="category-badge category-rendah"
+                  >Lokasi Rendah</span
+                >
+                <span class="category-badge category-sedang"
+                  >Material Sedang</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-18</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Low-Input Emergency Tent
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-sedang">SDM Sedang</span>
+                <span class="category-badge category-rendah"
+                  >Lokasi Rendah</span
+                >
+                <span class="category-badge category-rendah"
+                  >Material Rendah</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-19</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Basic Natural Material Hut
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-rendah">SDM Rendah</span>
+                <span class="category-badge category-tinggi"
+                  >Lokasi Tinggi</span
+                >
+                <span class="category-badge category-tinggi"
+                  >Material Tinggi</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-20</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Minimalist Survival Shelter
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-rendah">SDM Rendah</span>
+                <span class="category-badge category-tinggi"
+                  >Lokasi Tinggi</span
+                >
+                <span class="category-badge category-sedang"
+                  >Material Sedang</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-21</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Emergency Tarps & Sticks
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-rendah">SDM Rendah</span>
+                <span class="category-badge category-tinggi"
+                  >Lokasi Tinggi</span
+                >
+                <span class="category-badge category-rendah"
+                  >Material Rendah</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-22</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Hilly Area Grass Shelter
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-rendah">SDM Rendah</span>
+                <span class="category-badge category-sedang"
+                  >Lokasi Sedang</span
+                >
+                <span class="category-badge category-tinggi"
+                  >Material Tinggi</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-23</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Intermediate Survival Shed
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-rendah">SDM Rendah</span>
+                <span class="category-badge category-sedang"
+                  >Lokasi Sedang</span
+                >
+                <span class="category-badge category-sedang"
+                  >Material Sedang</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-24</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Very Low-Resource Shelter
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-rendah">SDM Rendah</span>
+                <span class="category-badge category-sedang"
+                  >Lokasi Sedang</span
+                >
+                <span class="category-badge category-rendah"
+                  >Material Rendah</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-25</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Remote Village Shelter
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-rendah">SDM Rendah</span>
+                <span class="category-badge category-rendah"
+                  >Lokasi Rendah</span
+                >
+                <span class="category-badge category-tinggi"
+                  >Material Tinggi</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-26</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Sparse Resource Hut
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-rendah">SDM Rendah</span>
+                <span class="category-badge category-rendah"
+                  >Lokasi Rendah</span
+                >
+                <span class="category-badge category-sedang"
+                  >Material Sedang</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+
+            <div class="tms-card">
+              <div class="tms-id">TMS-27</div>
+              <h3 style="color: #2c3e50; margin: 8px 0; font-size: 1.1rem">
+                Ultra-Low Input Shelter
+              </h3>
+              <div style="margin: 8px 0">
+                <span class="category-badge category-rendah">SDM Rendah</span>
+                <span class="category-badge category-rendah"
+                  >Lokasi Rendah</span
+                >
+                <span class="category-badge category-rendah"
+                  >Material Rendah</span
+                >
+              </div>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Ukuran:</strong> 15 m² (5x3 meter)
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Material:</strong> Kombinasi bambu, baja ringan, dan GRC
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Teknologi:</strong> Prefabrikasi ringan, dirakit 3-4
+                orang
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>SDM:</strong> Semi-terampil dengan panduan teknis
+              </p>
+              <p style="font-size: 0.85rem; margin: 4px 0">
+                <strong>Transportasi:</strong> Dikirim dalam komponen modular
+                via truk kecil
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Assessment Section -->
+      <div id="assessment" class="content-section">
+        <h1>A. Identitas dan Deskripsi Responden dan Lokasi</h1>
+        <form id="respondenForm">
+          <div class="form-section">
+            <div class="form-group">
+              <label for="nama">Nama Responden</label>
+              <input type="text" id="nama" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+              <label for="umur">Umur</label>
+              <input
+                type="number"
+                id="umur"
+                class="form-control"
+                min="1"
+                required
+              />
+              tahun
+            </div>
+
+            <div class="form-group">
+              <label>Jenis Kelamin</label>
+              <div class="checkbox-group">
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="laki"
+                    name="jenis_kelamin"
+                    value="laki"
+                    required
+                  />
+                  <label for="laki" style="width: auto">Laki-laki</label>
+                </div>
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="perempuan"
+                    name="jenis_kelamin"
+                    value="perempuan"
+                  />
+                  <label for="perempuan" style="width: auto">Perempuan</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="pekerjaan">Pekerjaan Utama</label>
+              <input type="text" id="pekerjaan" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+              <label for="lama_tinggal">Lama Tinggal di Lokasi</label>
+              <input
+                type="number"
+                id="lama_tinggal"
+                class="form-control"
+                min="0"
+                required
+              />
+              tahun
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-section-title">
+              Lokasi yang Dinilai (dusun, desa, kabupaten)
+            </div>
+
+            <div class="form-group">
+              <label for="lokasi">Lokasi</label>
+              <input type="text" id="lokasi" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-section-title">
+              Jenis Bencana / Tingkat Risiko Bencana
+            </div>
+
+            <div class="form-group">
+              <label>Jenis Bencana</label>
+              <div class="checkbox-group">
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="banjir"
+                    name="bencana"
+                    value="banjir"
+                  />
+                  <label for="banjir" style="width: auto">Banjir</label>
+                </div>
+                <div class="checkbox-option">
+                  <input type="radio" id="gempa" name="bencana" value="gempa" />
+                  <label for="gempa" style="width: auto">Gempa</label>
+                </div>
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="longsor"
+                    name="bencana"
+                    value="longsor"
+                  />
+                  <label for="longsor" style="width: auto">Longsor</label>
+                </div>
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="lainnya"
+                    name="bencana"
+                    value="lainnya"
+                  />
+                  <label for="lainnya" style="width: auto">Lainnya:</label>
+                  <input
+                    type="text"
+                    id="lainnya_teks"
+                    class="form-control"
+                    style="flex: 1; margin-left: 5px"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Tingkat Risiko</label>
+              <div class="checkbox-group">
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="rendah"
+                    name="tingkat_risiko"
+                    value="rendah"
+                    required
+                  />
+                  <label for="rendah" style="width: auto">Rendah</label>
+                </div>
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="sedang"
+                    name="tingkat_risiko"
+                    value="sedang"
+                  />
+                  <label for="sedang" style="width: auto">Sedang</label>
+                </div>
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="tinggi"
+                    name="tingkat_risiko"
+                    value="tinggi"
+                  />
+                  <label for="tinggi" style="width: auto">Tinggi</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-section-title">
+              Kedekatan dengan Sumber Penghidupan (Akses Kerja)
+            </div>
+
+            <div class="form-group">
+              <div class="checkbox-group">
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="sangat_dekat"
+                    name="kedekatan"
+                    value="sangat_dekat"
+                    required
+                  />
+                  <label for="sangat_dekat" style="width: auto"
+                    >Sangat dekat (<500 m) atau di area kerja
+                  </label>
+                </div>
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="kurang_1km"
+                    name="kedekatan"
+                    value="kurang_1km"
+                  />
+                  <label for="kurang_1km" style="width: auto"><1 km</label>
+                </div>
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="1-3km"
+                    name="kedekatan"
+                    value="1-3km"
+                  />
+                  <label for="1-3km" style="width: auto">1-3 km</label>
+                </div>
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="3-5km"
+                    name="kedekatan"
+                    value="3-5km"
+                  />
+                  <label for="3-5km" style="width: auto">3-5 km</label>
+                </div>
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="lebih_5km"
+                    name="kedekatan"
+                    value="lebih_5km"
+                  />
+                  <label for="lebih_5km" style="width: auto"
+                    >>5 km dari sumber penghidupan</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-section-title">Status Lahan</div>
+
+            <div class="form-group">
+              <div class="checkbox-group">
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="milik_pribadi"
+                    name="status_lahan"
+                    value="milik_pribadi"
+                    required
+                  />
+                  <label for="milik_pribadi" style="width: auto"
+                    >Tanah milik pribadi dengan izin jelas</label
+                  >
+                </div>
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="kas_desa"
+                    name="status_lahan"
+                    value="kas_desa"
+                  />
+                  <label for="kas_desa" style="width: auto"
+                    >Kas desa dengan izin</label
+                  >
+                </div>
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="izin_terbatas"
+                    name="status_lahan"
+                    value="izin_terbatas"
+                  />
+                  <label for="izin_terbatas" style="width: auto"
+                    >Tanah milik dengan izin terbatas</label
+                  >
+                </div>
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="sewa_tidak_resmi"
+                    name="status_lahan"
+                    value="sewa_tidak_resmi"
+                  />
+                  <label for="sewa_tidak_resmi" style="width: auto"
+                    >Sewa tidak resmi</label
+                  >
+                </div>
+                <div class="checkbox-option">
+                  <input
+                    type="radio"
+                    id="tidak_jelas"
+                    name="status_lahan"
+                    value="tidak_jelas"
+                  />
+                  <label for="tidak_jelas" style="width: auto"
+                    >Tidak jelas / legalitas bermasalah</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="assessment-form">
+          <h3>Evaluasi Kondisi Lapangan untuk TMS</h3>
+          <p style="margin-bottom: 15px; font-size: 0.9rem">
+            Berikan penilaian untuk setiap kriteria berdasarkan kondisi aktual
+            di lapangan:
+          </p>
+
+        <h2>📊 Penilaian Kondisi Lapangan</h2>
+
+        <div class="assessment-form">
+          <h3>Evaluasi Kondisi Lapangan untuk TMS</h3>
+          <p style="margin-bottom: 15px; font-size: 0.9rem">
+            Klik pada sel yang sesuai dengan kondisi lapangan untuk setiap kriteria:
+          </p>
+
+          <!-- Form Penilaian Lokasi -->
+          <div class="criteria-form">
+            <h4>📍 Keterjangkauan Lokasi</h4>
+            <div class="table-wrapper">
+              <table class="criteria-table">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Kriteria</th>
+                    <th class="score-1">Skor 1</th>
+                    <th class="score-2">Skor 2</th>
+                    <th class="score-3">Skor 3</th>
+                    <th class="score-4">Skor 4</th>
+                    <th class="score-5">Skor 5</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><strong>Jenis Jalan</strong></td>
+                    <td class="score-1" data-criteria="location-1" data-score="1">Tidak tersedia akses darat</td>
+                    <td class="score-2" data-criteria="location-1" data-score="2">Tersedia akses darat alami</td>
+                    <td class="score-3" data-criteria="location-1" data-score="3">Terdapat akses darat, namun mengalami kerusakan parah (≥ 50%)</td>
+                    <td class="score-4" data-criteria="location-1" data-score="4">Terdapat akses darat dengan kerusakan sedang (20-50%)</td>
+                    <td class="score-5" data-criteria="location-1" data-score="5">Akses darat dalam kondisi baik (kerusakan 0-19%)</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><strong>Jarak dari Pusat Logistik Utama</strong></td>
+                    <td class="score-1" data-criteria="location-2" data-score="1">Lebih dari 30 km</td>
+                    <td class="score-2" data-criteria="location-2" data-score="2">20-30 km</td>
+                    <td class="score-3" data-criteria="location-2" data-score="3">10-20 km</td>
+                    <td class="score-4" data-criteria="location-2" data-score="4">5-10 km</td>
+                    <td class="score-5" data-criteria="location-2" data-score="5">kurang dari 5 km</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><strong>Jenis Kendaraan yang Dapat Mengakses Lokasi</strong></td>
+                    <td class="score-1" data-criteria="location-3" data-score="1">Tidak dapat dilalui kendaraan</td>
+                    <td class="score-2" data-criteria="location-3" data-score="2">Hanya dilalui sepeda motor</td>
+                    <td class="score-3" data-criteria="location-3" data-score="3">Dapat dilalui kendaraan tertentu</td>
+                    <td class="score-4" data-criteria="location-3" data-score="4">Dapat dilalui kendaraan kecil dan sedang</td>
+                    <td class="score-5" data-criteria="location-3" data-score="5">Dapat dilalui kendaraan besar seperti truk atau tronton</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td><strong>Ketersediaan Transportasi Umum</strong></td>
+                    <td class="score-1" data-criteria="location-4" data-score="1">Tidak tersedia</td>
+                    <td class="score-2" data-criteria="location-4" data-score="2">Tersedia maksimal satu kali dalam sehari</td>
+                    <td class="score-3" data-criteria="location-4" data-score="3">Tersedia 2-8 kali dalam sehari</td>
+                    <td class="score-4" data-criteria="location-4" data-score="4">Tersedia 9-12 kali dalam sehari</td>
+                    <td class="score-5" data-criteria="location-4" data-score="5">Tersedia setiap saat (akses daring/online)</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><strong>Waktu Tempuh dari Pusct Logistik Utama</strong></td>
+                    <td class="score-1" data-criteria="location-5" data-score="1">Lebih dari 3 jam</td>
+                    <td class="score-2" data-criteria="location-5" data-score="2">2-3 jam</td>
+                    <td class="score-3" data-criteria="location-5" data-score="3">1-2 jam</td>
+                    <td class="score-4" data-criteria="location-5" data-score="4">30-60 menit</td>
+                    <td class="score-5" data-criteria="location-5" data-score="5">kurang dari 30 menit</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td><strong>Kondisi Lingkungan Proyek</strong></td>
+                    <td class="score-1" data-criteria="location-6" data-score="1">Kondisi buruk dengan kemiringan lahan > 15%</td>
+                    <td class="score-2" data-criteria="location-6" data-score="2">Kondisi kurang baik dengan kemiringan lahan 12-15%</td>
+                    <td class="score-3" data-criteria="location-6" data-score="3">Kondisi sedang dengan kemiringan lahan 9-11%</td>
+                    <td class="score-4" data-criteria="location-6" data-score="4">Kondisi baik dengan kemiringan lahan 6-8%</td>
+                    <td class="score-5" data-criteria="location-6" data-score="5">Kondisi ideal dengan kemiringan lahan 2,5-5%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="score-result">
+              <p>Total Skor Lokasi: <span id="location-score">0</span> - 
+                Kategori: <span id="location-category">Belum dinilai</span></p>
+            </div>
+          </div>
+
+          <!-- Form Penilaian SDM -->
+          <div class="criteria-form">
+            <h4>👷 Ketersediaan SDM</h4>
+            <div class="table-wrapper">
+              <table class="criteria-table">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Kriteria</th>
+                    <th class="score-1">Skor 1</th>
+                    <th class="score-2">Skor 2</th>
+                    <th class="score-3">Skor 3</th>
+                    <th class="score-4">Skor 4</th>
+                    <th class="score-5">Skor 5</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><strong>Sertifikasi di Bidang Konstruksi</strong></td>
+                    <td class="score-1" data-criteria="sdm-1" data-score="1">Tidak memiliki sertifikasi apapun</td>
+                    <td class="score-2" data-criteria="sdm-1" data-score="2">Memiliki sertifikasi yang tidak relevan</td>
+                    <td class="score-3" data-criteria="sdm-1" data-score="3">Memiliki sertifikasi relevan tetapi tidak terdaftar di BNSP</td>
+                    <td class="score-4" data-criteria="sdm-1" data-score="4">Memiliki satu sertifikasi relevan yang terdaftar di BNSP</td>
+                    <td class="score-5" data-criteria="sdm-1" data-score="5">Memiliki lebih dari satu sertifikasi relevan yang terdaftar di BNSP</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><strong>Kemampuan dalam Membaca Gambar Teknik</strong></td>
+                    <td class="score-1" data-criteria="sdm-2" data-score="1">Tidak mampu membaca gambar</td>
+                    <td class="score-2" data-criteria="sdm-2" data-score="2">Mampu membaca gambar sederhana/non-teknis</td>
+                    <td class="score-3" data-criteria="sdm-2" data-score="3">Mampu membaca dan meniru gambar teknis</td>
+                    <td class="score-4" data-criteria="sdm-2" data-score="4">Mampu membaca dan mengedit gambar teknis</td>
+                    <td class="score-5" data-criteria="sdm-2" data-score="5">Mampu membaca dan membuat gambar teknis kompleks (misalnya AutoCAD)</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><strong>Penggunaan Alat Teknis</strong></td>
+                    <td class="score-1" data-criteria="sdm-3" data-score="1">Tidak pernah menggunakan alat</td>
+                    <td class="score-2" data-criteria="sdm-3" data-score="2">Jarang menggunakan alat (pernah digunakan dalam jangka waktu 10 tahun terakhir)</td>
+                    <td class="score-3" data-criteria="sdm-3" data-score="3">Kadang-kadang menggunakan alat (dalam 5 tahun terakhir)</td>
+                    <td class="score-4" data-criteria="sdm-3" data-score="4">Sering menggunakan alat (dalam 3 tahun terakhir)</td>
+                    <td class="score-5" data-criteria="sdm-3" data-score="5">Selalu menggunakan alat (dalam 1 tahun terakhir)</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td><strong>Pengalaman Kerja di Bidang Konstruksi</strong></td>
+                    <td class="score-1" data-criteria="sdm-4" data-score="1">Tidak memiliki pengalaman atau pengalaman kurang dari 1 tahun</td>
+                    <td class="score-2" data-criteria="sdm-4" data-score="2">Memiliki pengalaman selama 1-2 tahun</td>
+                    <td class="score-3" data-criteria="sdm-4" data-score="3">Memiliki pengalaman selama 3-4 tahun</td>
+                    <td class="score-4" data-criteria="sdm-4" data-score="4">Memiliki pengalaman selama 5-6 tahun</td>
+                    <td class="score-5" data-criteria="sdm-4" data-score="5">Memiliki pengalaman lebih dari 6 tahun di bidang konstruksi</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><strong>Keterlibatan dalam Proyek Sejenis</strong></td>
+                    <td class="score-1" data-criteria="sdm-5" data-score="1">Tidak pernah terlibat dalam proyek</td>
+                    <td class="score-2" data-criteria="sdm-5" data-score="2">Pernah terlibat sebagai pekerja</td>
+                    <td class="score-3" data-criteria="sdm-5" data-score="3">Pernah terlibat sebagai tukang</td>
+                    <td class="score-4" data-criteria="sdm-5" data-score="4">Pernah terlibat sebagai kepala tukang</td>
+                    <td class="score-5" data-criteria="sdm-5" data-score="5">Pernah terlibat sebagai mandor</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td><strong>Pelatihan Konstruksi</strong></td>
+                    <td class="score-1" data-criteria="sdm-6" data-score="1">Tidak pernah ikut pelatihan</td>
+                    <td class="score-2" data-criteria="sdm-6" data-score="2">Ikut pelatihan >5 tahun lalu</td>
+                    <td class="score-3" data-criteria="sdm-6" data-score="3">Ikut pelatihan >3 tahun lalu</td>
+                    <td class="score-4" data-criteria="sdm-6" data-score="4">Pelatihan dalam 1 tahun terakhir</td>
+                    <td class="score-5" data-criteria="sdm-6" data-score="5">Aktif dalam pelatihan dan jadi trainer</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="score-result">
+              <p>Total Skor SDM: <span id="sdm-score">0</span> - 
+                Kategori: <span id="sdm-category">Belum dinilai</span></p>
+            </div>
+          </div>
+
+          <!-- Form Penilaian Material -->
+          <div class="criteria-form">
+            <h4>🧱 Ketersediaan Material</h4>
+            <div class="table-wrapper">
+              <table class="criteria-table">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Kriteria</th>
+                    <th class="score-1">Skor 1</th>
+                    <th class="score-2">Skor 2</th>
+                    <th class="score-3">Skor 3</th>
+                    <th class="score-4">Skor 4</th>
+                    <th class="score-5">Skor 5</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><strong>Volume Material Lokal yang Tersedia</strong></td>
+                    <td class="score-1" data-criteria="material-1" data-score="1">Kurang dari 50% dari total kebutuhan material</td>
+                    <td class="score-2" data-criteria="material-1" data-score="2">50-59% dari total kebutuhan</td>
+                    <td class="score-3" data-criteria="material-1" data-score="3">60-79% dari total kebutuhan</td>
+                    <td class="score-4" data-criteria="material-1" data-score="4">80-90% dari total kebutuhan</td>
+                    <td class="score-5" data-criteria="material-1" data-score="5">91-100% dari total kebutuhan</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><strong>Keanekaragaman Jenis Material Lokal</strong></td>
+                    <td class="score-1" data-criteria="material-2" data-score="1">Kurang dari 20% jenis material yang diperlukan tersedia</td>
+                    <td class="score-2" data-criteria="material-2" data-score="2">21-30% jenis material tersedia</td>
+                    <td class="score-3" data-criteria="material-2" data-score="3">31-40% jenis material tersedia</td>
+                    <td class="score-4" data-criteria="material-2" data-score="4">41-50% jenis material tersedia</td>
+                    <td class="score-5" data-criteria="material-2" data-score="5">Lebih dari 51% jenis material tersedia</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><strong>Kemudahan dalam Mendapatkan Material</strong></td>
+                    <td class="score-1" data-criteria="material-3" data-score="1">Tidak dapat memperoleh material</td>
+                    <td class="score-2" data-criteria="material-3" data-score="2">Material tersedia tetapi sulit diakses (lambat, offline, dan stok tidak pasti)</td>
+                    <td class="score-3" data-criteria="material-3" data-score="3">Material tersedia dengan tingkat kemudahan sedang (offline dan lambat)</td>
+                    <td class="score-4" data-criteria="material-3" data-score="4">Material tersedia dan mudah diperoleh (dapat dipesan, namun masih secara offline)</td>
+                    <td class="score-5" data-criteria="material-3" data-score="5">Material tersedia dan sangat mudah diperoleh (dapat dipesan secara online)</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td><strong>Harga dan Stabilitas Biaya Material</strong></td>
+                    <td class="score-1" data-criteria="material-4" data-score="1">Harga mahal dengan fluktuasi lebih dari 10%</td>
+                    <td class="score-2" data-criteria="material-4" data-score="2">Harga mahal dengan fluktuasi 8-9%</td>
+                    <td class="score-3" data-criteria="material-4" data-score="3">Harga mahal dengan fluktuasi 6-7%</td>
+                    <td class="score-4" data-criteria="material-4" data-score="4">Harga wajar dengan fluktuasi 4-5%</td>
+                    <td class="score-5" data-criteria="material-4" data-score="5">Harga wajar dengan fluktuasi kurang dari 3%</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><strong>Kemampuan Produksi Material Lokal</strong></td>
+                    <td class="score-1" data-criteria="material-5" data-score="1">Tidak dapat diproduksi secara lokal</td>
+                    <td class="score-2" data-criteria="material-5" data-score="2">Dapat diproduksi namun sangat lambat</td>
+                    <td class="score-3" data-criteria="material-5" data-score="3">Dapat diproduksi tetapi lambat</td>
+                    <td class="score-4" data-criteria="material-5" data-score="4">Dapat diproduksi secara normal</td>
+                    <td class="score-5" data-criteria="material-5" data-score="5">Dapat diproduksi dan disesuaikan dengan kebutuhan secara efisien</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td><strong>Kesiapan Utilitas (Air, Listrik, Gas, Komunikasi)</strong></td>
+                    <td class="score-1" data-criteria="material-6" data-score="1">Tidak tersedia</td>
+                    <td class="score-2" data-criteria="material-6" data-score="2">Tersedia 1 kesiapan utilitas</td>
+                    <td class="score-3" data-criteria="material-6" data-score="3">Tersedia 2 kesiapan utilitas</td>
+                    <td class="score-4" data-criteria="material-6" data-score="4">Tersedia 3 kesiapan utilitas</td>
+                    <td class="score-5" data-criteria="material-6" data-score="5">Semua tersedia kesiapan utilitas</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="score-result">
+              <p>Total Skor Material: <span id="material-score">0</span> - Kategori: <span id="material-category">Belum dinilai</span></p>
+            </div>
+          </div>
+
+          <button class="assess-btn" onclick="assessTMS()">
+            🔍 Dapatkan Rekomendasi TMS
+          </button>
+        </div>
+
+        <div id="assessment-result" style="display: none"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
